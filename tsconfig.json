@@ -25,7 +25,9 @@
       "es2015",
       "es2016"
     ],
-    "declaration": true
+    "declaration": true,
+    "outDir": "./dist",
+    "declarationDir": "./dist"
   },
   "exclude": [
     "dist/**/*",
