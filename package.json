@@ -11,9 +11,6 @@
     "prepublish": "yarn build",
     "test": "jest"
   },
-  "resolutions": {
-    "babel-core": "^7.0.0-bridge.0"
-  },
   "devDependencies": {
     "@types/enzyme": "^3.1.15",
     "@types/enzyme-adapter-react-16": "^1.0.3",
