@@ -1,6 +1,6 @@
 {
   "name": "@postmates/react-io",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": "https://github.com/postmates/react-io",
   "author": "Anatoli Papirovski <anatoli.papirovski@postmates.com>",
   "license": "MIT",
@@ -8,7 +8,8 @@
   "module": "dist/index.es.js",
   "scripts": {
     "build": "rollup -c",
-    "prepublish": "yarn build",
+    "prepublish": "yarn build && yarn gentypes && rm -rf ./dist/src && rm ./dist/setupTests.d.ts",
+    "gentypes": "yarn dts-bundle-generator -o ./dist/index.d.ts ./dist/src/index.d.ts",
     "test": "jest"
   },
   "devDependencies": {
@@ -16,6 +17,7 @@
     "@types/enzyme-adapter-react-16": "^1.0.3",
     "@types/jest": "^23.3.10",
     "@types/react": "^16.4.16",
+    "dts-bundle-generator": "^2.0.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "jest": "^23.6.0",
@@ -29,5 +31,5 @@
     "intersection-observer": "^0.5.1",
     "react": "^16.6.3"
   },
-  "types": "dist/src/index.d.ts"
+  "types": "dist/index.d.ts"
 }

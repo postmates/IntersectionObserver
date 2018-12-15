@@ -26,7 +26,6 @@
       "es2016"
     ],
     "declaration": true,
-    "outDir": "./dist",
     "declarationDir": "./dist"
   },
   "exclude": [
