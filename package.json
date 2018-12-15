@@ -1,6 +1,6 @@
 {
   "name": "@postmates/react-io",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/postmates/react-io",
   "author": "Anatoli Papirovski <anatoli.papirovski@postmates.com>",
   "license": "MIT",
@@ -28,5 +28,6 @@
   "dependencies": {
     "intersection-observer": "^0.5.1",
     "react": "^16.6.3"
-  }
+  },
+  "types": "index.d.ts"
 }

@@ -25,6 +25,7 @@
       "es2015",
       "es2016"
     ],
+    "declaration": true
   },
   "exclude": [
     "dist/**/*",
